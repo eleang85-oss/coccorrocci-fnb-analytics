@@ -39,9 +39,9 @@ if sezione == "📊 Inserimento &amp; Margini Giornalieri":
     with col1: 
         st.markdown("### 🍕 Ristorante &amp; Asporto") 
         coperti = st.number_input("Coperti serviti al ristorante", min_value=0, value=85, step=5) 
-        scontrino_rist = st.number_input("Scontrino medio ristorante (€)", min\_value=0.0, value=25.0, step=0.5) 
+        scontrino_rist = st.number_input("Scontrino medio ristorante (€)", min_value=0.0, value=25.0, step=0.5) 
         ordini_asporto = st.number_input("Ordini Asporto / Pizzeria", min_value=0, value=40, step=5) 
-        scontrino_asporto = st.number_input("Scontrino medio asporto (€)", min\_value=0.0, value=13.0, step=0.5) 
+        scontrino_asporto = st.number_input("Scontrino medio asporto (€)", min_value=0.0, value=13.0, step=0.5) 
         
     with col2: st.markdown("### 🛒 Costi Materie Prime") 
         food_cost = st.number_input("Spesa complessiva cibo/bevande di oggi (€)", min_value=0.0, value=750.0, step=10.0)
