@@ -22,6 +22,8 @@ def load_ai_model():
     y_train = np.array([45, 65, 85, 95, 90, 110, 50, 5, 30]) 
     model.fit(X_train, y_train) 
     return model 
+
+ai_model = load_ai_model()
     
 # 3. Sidebar per selezione funzionalità 
 st.sidebar.header("⚙️ Menu Gestione")
