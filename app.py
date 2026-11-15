@@ -74,7 +74,7 @@ if sezione == "📊 Inserimento &amp; Margini Giornalieri":
         "Voce": ["Ricavo Totale", "Food Cost", "Personale (28%)", "Utenze/Gestione", "EBITDA Netto"], 
         "Importo (€)": [ricavo_totale, food_cost, costo_personale, utenze_gestione + canone_giornaliero, ebitda_giornaliero] 
     }) 
-    st.bar\_chart(df\_chart.set\_index("Voce")) 
+    st.bar_chart(df_chart.set_index("Voce")) 
 
 # --------------------------------------------------------- 
 # SEZIONE 2: PREVISIONE AI SCORTE 
