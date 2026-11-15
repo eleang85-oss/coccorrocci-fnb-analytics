@@ -12,7 +12,8 @@ st.title("🍷 Coccorrocci - Management &amp; AI Assistant")
 st.caption("Dashboard gestionale per il Ristorante e la Pizzeria del Campeggio") 
 
 # 2. Modello AI integrato (cached per velocità)
-@st.cache_resource def load_ai_model(): 
+@st.cache_resource 
+def load_ai_model(): 
     model = RandomForestRegressor(n_estimators=50, random_state=42) 
     X_train = np.array([ [150, 28.0, 0], [200, 30.0, 1], [300, 32.0, 1], 
                          [350, 34.0, 1], [100, 25.0, 0], [400, 35.0, 1], 
