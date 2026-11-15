@@ -17,10 +17,11 @@ def load_ai_model():
     model = RandomForestRegressor(n_estimators=50, random_state=42) 
     X_train = np.array([ [150, 28.0, 0], [200, 30.0, 1], [300, 32.0, 1], 
                          [350, 34.0, 1], [100, 25.0, 0], [400, 35.0, 1], 
-                         [250, 29.0, 0], [120, 26.0, 0], [180, 27.0, 1] ]) 
-    y_train = np.array([45, 65, 85, 95, 30, 110, 70, 35, 55]) 
+                         [250, 29.0, 0], [120, 26.0, 0], [180, 27.0, 1] 
+                       ]) 
+    y_train = np.array([45, 65, 85, 95, 90, 110, 50, 5, 30]) 
     model.fit(X_train, y_train) 
-    return model ai_model = load_ai_model() 
+    return model 
     
 # 3. Sidebar per selezione funzionalità 
 st.sidebar.header("⚙️ Menu Gestione")
