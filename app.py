@@ -57,7 +57,7 @@ if sezione == "📊 Inserimento &amp; Margini Giornalieri":
     costo_personale = ricavo_totale * 0.28 
     utenze_gestione = ricavo_totale * 0.065 
     ebitda_giornaliero = ricavo_totale - (food_cost + costo_personale + utenze_gestione + canone_giornaliero) 
-    food_cost_pct = (food_cost / ricavo_totale * 100) if ricavo\totale > 0 else 0 
+    food_cost_pct = (food_cost / ricavo_totale * 100) if ricavo_totale > 0 else 0 
 
     st.markdown("---") 
     st.subheader("📈 Indicatori del Giorno") 
