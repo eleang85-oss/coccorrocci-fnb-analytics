@@ -43,7 +43,8 @@ if sezione == "📊 Inserimento &amp; Margini Giornalieri":
         ordini_asporto = st.number_input("Ordini Asporto / Pizzeria", min_value=0, value=40, step=5) 
         scontrino_asporto = st.number_input("Scontrino medio asporto (€)", min_value=0.0, value=13.0, step=0.5) 
         
-    with col2: st.markdown("### 🛒 Costi Materie Prime") 
+    with col2: 
+        st.markdown("### 🛒 Costi Materie Prime") 
         food_cost = st.number_input("Spesa complessiva cibo/bevande di oggi (€)", min_value=0.0, value=750.0, step=10.0)
         canone_annuo = 20000.0 
         canone_giornaliero = canone_annuo / 120 
